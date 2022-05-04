@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}  
+
+/* Encabezado */
+
+.encabezado {
+    background-color: rgb(253, 179, 136);
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+
+
+.encabezadoLogo {
+    width: 150px;
+    margin-top: 1.5vh;
+}
+
+.encabezado h1 {
+    display: inline-block;
+}
+
+.encabezado nav {
+    display: inline-block;
+}
+
+.encabezado li {
+    display: inline-block;
+    padding: 0.5vh 3vw;
+}
+
+.encabezado a {
+    color: black;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*------ Portada ------*/
+
+.portadaInicio {
+        background-color: white;
+        width: 100%;
+        margin: 0 auto;
+}
+
+.portadaInicio main {
+    display: flex;
+}
+
+.portadaInicio div {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.portadaInicio h2 {
+    color: rgb(43, 197, 197);
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3vh 3vw;
+    text-align: center;
+}
+
+.portadaInicio p {
+    padding: 3vh 5vw;
+    color: black;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Portada Nosotros */
+
+.portadaNosotros{
+    background-image: url(../assets/img/dentista-2.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Portada Tratamientos */
+
+.portadaTratamientos {
+    background-image: url(../assets/img/odontologa-revisando02.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Portada Faq */
+
+.portadaFaq {
+    background-image: url(../assets/img/dentista-telefono6.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Portada Contacto */
+
+.portadaContacto {
+    background-image: url(../assets/img/dentista-telefono2.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+/*------ Seccion 2 ------*/
+
+/* Seccion 2 Inicio */
+
+
+.seccionDosInicio {
+    background-color: rgb(43, 197, 197);
+    text-align: center;
+
+}
+
+.seccionDosInicio h2 {
+    padding: 3vh 3vw;
+    color: rgb(255, 154, 95);
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seccionDosInicio img {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.seccionDosInicio ul {
+    margin: 0 auto;
+}
+
+.seccionDosInicio li {
+    display: inline-block;
+    padding: 5vh 5vw;
+    color: rgb(209, 131, 87);
+    font-size: large;
+}
+
+/* Seccion 2 Nosotros */
+
+.seccionDosNosotros {
+    background-color: rgb(43, 197, 197);
+    text-align: center;
+    
+}
+
+.seccionDosNosotros h2 {
+    padding: 3vh 3vw;
+    color: rgb(255, 154, 95);
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.presentacionOdontologa {
+    display: flex;
+       
+}
+
+.presentacionOdontologa p {
+    display: flex;
+    width: 60%;
+    margin: 100px 10px 0px;
+    padding: 3vh 5vw;
+    color: black;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.seccionDosNosotros img {
+    width: 260px;
+    border: solid 5px rgb(214, 151, 114);
+    margin: 20px 10px 20px 70px;
+}
+
+
+/* Seccion 2 Tratamientos */
+
+.seccionDosTratamientos {
+    background-color: rgb(43, 197, 197);
+    text-align: center;
+}
+
+.seccionDosTratamientos h2 {
+    padding: 3vh 3vw;
+    color: rgb(255, 154, 95);
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seccionDosTratamientos li {
+    display: flex;
+    margin: 20px auto;
+}
+
+.seccionDosTratamientos div {
+    display: flex;
+}
+
+.seccionDosTratamientos h3 {
+    padding: 3vh 3vw;    
+    color: black;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seccionDosTratamientos p {
+    display: flex;
+    margin: 50px 10px 10px;
+    padding: 3vh 5vw;
+    color: black;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.seccionDosTratamientos img {
+    width: 300px;
+    
+}
+
+/* Seccion 2 FAQ */
+
+.seccionDosFaq {
+    background-color: rgb(43, 197, 197);
+    text-align: center;
+    height: 50vh;
+}
+
+.seccionDosFaq div {
+    display: flex;
+    padding: 100px 20px;
+}
+
+.seccionDosFaq p {
+    font-size: 28px;
+}
+
+/*------ Seccion 3 ------*/
+
+
+
+/* Seccion 3 Inicio */
+
+.seccionTresInicio {
+    background-color: white;
+    /*height: 80vh;*/
+    width: 100%;
+    color: black;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.seccionTresInicio h2 {
+    color: rgb(43, 197, 197);
+    padding: 3vh 3vw;
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.seccionTresInicio div {
+    display: inline-block;
+    
+}
+
+.seccionContactoFormulario {
+    width: 50%;
+}
+
+.seccionContactoFormulario form {
+    padding: 2vh 3vw;
+    margin: 0 auto;
+    
+}
+
+.seccionContactoFormulario fieldset {
+    padding: 2vh 3vw;
+}
+
+.seccionContactoFormulario label {
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+}
+
+.seccionContactoFormulario input {
+    text-align: center;
+    padding: 0.5vh 2vw;
+    margin-bottom: 0.5vh;
+    margin-left: 3vw;
+}
+
+
+
+.seccionContactoMapa {
+    text-align: center;
+    
+}
+
+.seccionTresInicio p a {
+    color: black;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Seccion 3 Nosotros */
+
+.galeriaNosotros h2 {
+    color: rgb(43, 197, 197);
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3vh 3vw;
+    text-align: center;
+}
+
+.galeriaNosotros div {
+    display: flex;
+    justify-content: center;
+    margin: 20px 20px;
+
+}
+
+.galeriaNosotros img {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+/* Seccion 3 Tratamientos */
+
+.seccionTresTratamientos {
+    background-color: white;
+    text-align: center;
+}
+
+.seccionTresTratamientos h2 {
+    padding: 3vh 3vw;
+    color: rgb(255, 154, 95);
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seccionTresTratamientos li {
+    display: flex;
+    margin: 20px auto;
+}
+
+.seccionTresTratamientos div {
+    display: flex;
+}
+
+.seccionTresTratamientos h3 {
+    padding: 3vh 3vw;    
+    color: black;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seccionTresTratamientos p {
+    display: flex;
+    margin: 50px 10px 10px;
+    padding: 3vh 5vw;
+    color: black;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.seccionTresTratamientos img {
+    width: 300px;
+    
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(253, 179, 136);
+    width: 100%;
+    height: 20vh;
+}
+
+footer ul {
+    padding-top: 1vh;
+    margin-left: 10%;
+}
+
+footer li {
+    padding: 1vh 2vw;
+}
+
+footer a {
+    color: black;
+}
+
+footer img {
+    width: 15px;
+}
+
+
+.copyright {
+    padding-left: 50%  ;
+    color: black;
+    font-size: small;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
