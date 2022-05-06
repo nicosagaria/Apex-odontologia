@@ -390,7 +390,27 @@ ul {
     
 }
 
+/*------- FAQ Boostrap ---------*/
 
+.background-nav {
+    background-color: rgb(255, 154, 95);
+}
+
+.seccionPreguntas {
+    background-color: rgb(43, 197, 197);
+    padding: 50px;
+    display: flex;
+}
+
+.espacio-preguntas {
+    margin: 20px 40px;
+}
+
+.seccionPreguntasDos {
+    background-color: white;
+    padding: 50px;
+    display: flex;
+}
 
 /* Footer */
 
