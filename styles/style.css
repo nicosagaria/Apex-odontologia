@@ -53,14 +53,21 @@ ul {
 
 /*------ Portada ------*/
 
+
+
 .portadaInicio {
         background-color: white;
         width: 100%;
         margin: 0 auto;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .portadaInicio main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .portadaInicio div {
@@ -424,4 +431,105 @@ footer img {
     font-size: small;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*-- Nombrar Areas --*/
+
+.encabezado {
+    grid-area: encabezado;
+}
+
+
+.portadaGridAreas {
+    grid-area: seccion1;
+}
+
+.seccionDosGridAreas {
+    grid-area: seccion2;
+}
+
+.seccionTresGridAreas {
+    grid-area: seccion3;
+}
+
+footer {
+    grid-area: pie;
+}
+
+
+
+
+
+
+/*--- SMARTPHONE ---*/
+
+@media (max-width: 450px) {
+    #gridAreas {
+        display: grid;
+        grid-template-areas: 
+        
+        "encabezado encabezado"
+        "seccion1   seccion1"
+        "seccion2   seccion2"
+        "seccion3   seccion3"
+        "pie        pie"     
+        ;
+        grid-template-columns: auto;
+        grid-template-rows:  180px 100px auto auto auto 150px;
+    }   
+
+/*header-menu*/
+.encabezado {
+    background-color: rgb(253, 179, 136);
+    padding: 15px 0 ;
+    border: rgb(253, 179, 136);
+
+}
+
+
+
+.encabezado ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    position: relative ;
+    padding-top: 0;
+}
+
+
+
+/*seccion1*/
+
+.portadaInicio main {
+    display: flex;
+    flex-direction: column;
+}
+
+.fondoPortada img {
+    display: none;
+}
+
+.fondoPortada {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../assets/img/consultorio05.jpg) ;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.portadaInicio div {
+    height: 50vh;
+}
+
+/*seccion Tratamientos*/
+
+#gridTratamientos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
 }
