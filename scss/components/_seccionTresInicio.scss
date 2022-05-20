@@ -1,0 +1,63 @@
+@import '../base/variables';
+
+.seccionTresInicio {
+    background-color: white;
+    /*height: 80vh;*/
+    width: 100%;
+    color: black;
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+
+    div {
+        display: inline-block;
+    }
+
+
+    h2 {
+        color: rgb(43, 197, 197);
+    padding: 3vh 3vw;
+    font-size:xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .seccionContactoFormulario {
+        width: 50%;         
+
+        form {
+            padding: 2vh 3vw;
+            margin: 0 auto; 
+
+            fieldset {
+                padding: 2vh 3vw;
+
+                label {
+                    padding-top: 2vh;
+                    padding-bottom: 4vh;
+
+                }
+
+                input {
+                    text-align: center;
+                    padding: 0.5vh 2vw;
+                    margin-bottom: 0.5vh;
+                    margin-left: 3vw;
+                }
+
+            }
+
+            }
+        }
+
+
+    
+
+    .seccionContactoMapa {
+
+        text-align: center;
+    }
+
+}
+    
+
