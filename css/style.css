@@ -3,6 +3,7 @@
 /* Colores de Fondo */
 /* Tamaño de fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .encabezado {
   background-color: rgb(253, 179, 136);
   width: 100%;
@@ -14,7 +15,8 @@
 }
 .encabezado h1 .encabezadoLogo {
   width: 150px;
-  margin-top: 1.5vh;
+  margin-top: 30px;
+  margin-right: 400px;
 }
 .encabezado nav {
   display: inline-block;
@@ -25,8 +27,8 @@
 }
 .encabezado nav ul li a {
   color: black;
-  font-size: large;
-  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -46,12 +48,15 @@ ul {
   list-style-type: none;
 }
 
+a {
+  list-style-type: none;
+}
+
 /* Colores de Fondo */
 /* Tamaño de fuentes */
 .portadaInicio {
   background-color: white;
   width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,7 +68,10 @@ ul {
 }
 .portadaInicio main div {
   display: inline-block;
-  margin: 0 auto;
+}
+.portadaInicio main div img {
+  width: 1000px;
+  height: 100%;
 }
 .portadaInicio main div h2 {
   color: rgb(43, 197, 197);
@@ -71,6 +79,11 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
   padding: 3vh 3vw;
   text-align: center;
+}
+.portadaInicio main div h2 a {
+  color: rgb(253, 179, 136);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
 }
 .portadaInicio main div p {
   padding: 3vh 5vw;
@@ -85,6 +98,7 @@ footer {
   background-color: rgb(253, 179, 136);
   width: 100%;
   height: 20vh;
+  font-family: "Montserrat";
 }
 footer ul {
   padding-top: 1vh;
@@ -93,10 +107,11 @@ footer ul {
 footer ul li {
   padding: 1vh 2vw;
   display: flex;
-  align-items: flex-start;
 }
 footer ul li a {
   color: black;
+  display: flex;
+  align-items: center;
 }
 footer ul li img {
   width: 15px;
@@ -106,7 +121,7 @@ footer .copyright {
   color: black;
   font-size: small;
   font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
 }
 
 /* Colores de Fondo */
@@ -121,19 +136,30 @@ footer .copyright {
   font-size: xx-large;
   font-family: Arial, Helvetica, sans-serif;
 }
+.seccionDosInicio h2 a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
 .seccionDosInicio ul {
   margin: 0 auto;
 }
 .seccionDosInicio ul li {
   display: inline-block;
-  padding: 5vh 5vw;
-  /* background-color: white; */
-  color: rgb(209, 131, 87);
+  margin: 40px 100px;
+  color: white;
   font-size: large;
 }
 .seccionDosInicio ul li img {
   width: 250px;
-  margin: 0 auto;
+}
+.seccionDosInicio ul li p {
+  background-color: rgb(253, 179, 136);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
 }
 
 /* Colores de Fondo */
@@ -145,39 +171,108 @@ footer .copyright {
   color: black;
   font-size: large;
   font-family: "Roboto", sans-serif;
-  text-align: center;
+  display: grid;
+  grid-template-areas: "titulo titulo" "formulario mapa";
+  grid-template-columns: 50% auto;
+  grid-template-rows: 70px auto;
 }
-.seccionTresInicio div {
-  display: inline-block;
+.seccionTresInicio a {
+  color: rgb(253, 179, 136);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
 }
 .seccionTresInicio h2 {
   color: rgb(43, 197, 197);
   padding: 3vh 3vw;
   font-size: xx-large;
   font-family: Arial, Helvetica, sans-serif;
-}
-.seccionTresInicio .seccionContactoFormulario {
-  width: 50%;
+  text-align: center;
 }
 .seccionTresInicio .seccionContactoFormulario form {
-  padding: 2vh 3vw;
+  padding: 2vh 2vw;
   margin: 0 auto;
 }
 .seccionTresInicio .seccionContactoFormulario form fieldset {
-  padding: 2vh 3vw;
+  display: grid;
+  grid-template-areas: "nombre ingreso-nombre" "mail ingreso-mail" "consulta ingreso-consulta" "enviar enviar";
+  border-color: white;
+  border: none;
 }
 .seccionTresInicio .seccionContactoFormulario form fieldset label {
   padding-top: 2vh;
   padding-bottom: 4vh;
+  margin-right: 15px;
+  text-align: right;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
 }
 .seccionTresInicio .seccionContactoFormulario form fieldset input {
   text-align: center;
-  padding: 0.5vh 2vw;
-  margin-bottom: 0.5vh;
-  margin-left: 3vw;
+  margin: 15px 0;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+.seccionTresInicio .seccionContactoFormulario form fieldset textarea {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+.seccionTresInicio .seccionContactoFormulario form fieldset .boton-enviar {
+  width: 180px;
+  height: 40px;
+  margin-left: 50%;
 }
 .seccionTresInicio .seccionContactoMapa {
   text-align: center;
+  margin-top: 32px;
+}
+.seccionTresInicio .seccionContactoMapa a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  grid-area: titulo;
+}
+
+.seccionContactoFormulario {
+  grid-area: formulario;
+}
+
+.seccionContactoMapa {
+  grid-area: mapa;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.consulta {
+  grid-area: consulta;
+}
+
+.ingreso-nombre {
+  grid-area: ingreso-nombre;
+}
+
+.ingreso-mail {
+  grid-area: ingreso-mail;
+}
+
+.ingreso-consulta {
+  grid-area: ingreso-consulta;
+}
+
+.boton-enviar {
+  grid-area: enviar;
 }
 
 /*# sourceMappingURL=style.css.map */
