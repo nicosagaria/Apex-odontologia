@@ -1,20 +1,295 @@
-/* Error: Undefined mixin.
- *    ,
- * 19 | /         @include small {
- * 20 | |             margin-right: 100px;
- * 21 | | 
- * 22 | \         }
- *    '
- *   scss\components\_header.scss 19:9  @import
- *   scss\style.scss 3:9                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 19 \2502  \250c          @include small {\a 20 \2502  \2502              margin-right: 100px;\a 21 \2502  \2502  \a 22 \2502  \2514          }\a    \2575 \a   scss\\components\\_header.scss 19:9  @import\a   scss\\style.scss 3:9                root stylesheet";
+@charset "UTF-8";
+/* nesting o anidamiento */
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+.encabezado {
+  background-color: rgb(253, 179, 136);
+  width: 100%;
+  height: 20vh;
+  text-align: center;
 }
+.encabezado .logo {
+  display: inline-block;
+}
+.encabezado .logo .encabezadoLogo {
+  width: 150px;
+  margin-top: 30px;
+  margin-right: 400px;
+}
+@media screen and (max-width: 576px) {
+  .encabezado .logo .encabezadoLogo {
+    margin-right: 50%;
+    font-size: 12px;
+    color: pink;
+    font-family: "montserrat";
+  }
+}
+.encabezado .logo nav {
+  display: inline-block;
+}
+.encabezado .logo nav ul li {
+  display: inline-block;
+  padding: 0.5vh 3vw;
+}
+.encabezado .logo nav ul li a {
+  color: black;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 576px) {
+  .encabezado .logo nav ul li a {
+    margin-right: 50%;
+    font-size: 12px;
+    color: pink;
+    font-family: "montserrat";
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*a {
+  list-style-type: none;
+}//
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.portadaInicio {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portadaInicio main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.portadaInicio main div {
+  display: inline-block;
+}
+.portadaInicio main div img {
+  width: 1000px;
+  height: 100%;
+}
+.portadaInicio main div h1 {
+  color: rgb(43, 197, 197);
+  font-size: xx-large;
+  font-family: "Montserrat", sans-serif;
+  padding: 3vh 3vw;
+  text-align: center;
+}
+.portadaInicio main div h1 a {
+  color: rgb(253, 179, 136);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+.portadaInicio main div p {
+  margin-top: 30px;
+  padding: 3vh 5vw;
+  color: black;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+footer {
+  background-color: rgb(253, 179, 136);
+  width: 100%;
+  height: 20vh;
+  font-family: "Montserrat";
+}
+footer ul {
+  padding-top: 1vh;
+  margin-left: 10%;
+}
+footer ul li {
+  padding: 1vh 2vw;
+  display: flex;
+}
+footer ul li a {
+  color: black;
+  display: flex;
+  align-items: center;
+}
+footer ul li img {
+  width: 15px;
+}
+footer .copyright {
+  padding-left: 50%;
+  color: black;
+  font-size: small;
+  font-style: italic;
+  font-family: Arial;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.seccionDosInicio {
+  background-color: rgb(43, 197, 197);
+  text-align: center;
+}
+.seccionDosInicio h2 {
+  padding: 3vh 3vw;
+  color: rgb(255, 154, 95);
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.seccionDosInicio h2 a {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+.seccionDosInicio ul {
+  margin: 0 auto;
+}
+.seccionDosInicio ul li {
+  display: inline-block;
+  margin: 40px 100px;
+  color: white;
+  font-size: large;
+}
+.seccionDosInicio ul li img {
+  width: 250px;
+}
+.seccionDosInicio ul li p {
+  background-color: rgb(253, 179, 136);
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.seccionTresInicio {
+  background-color: white;
+  /*height: 80vh;*/
+  width: 100%;
+  color: black;
+  font-size: large;
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-areas: "titulo titulo" "formulario mapa";
+  grid-template-columns: 50% auto;
+  grid-template-rows: 70px auto;
+}
+.seccionTresInicio a {
+  color: rgb(253, 179, 136);
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+.seccionTresInicio h2 {
+  color: rgb(43, 197, 197);
+  padding: 3vh 3vw;
+  font-size: xx-large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.seccionTresInicio .seccionContactoFormulario form {
+  padding: 2vh 2vw;
+  margin: 0 auto;
+}
+.seccionTresInicio .seccionContactoFormulario form fieldset {
+  display: grid;
+  grid-template-areas: "nombre ingreso-nombre" "mail ingreso-mail" "consulta ingreso-consulta" "enviar enviar";
+  border-color: white;
+  border: none;
+}
+.seccionTresInicio .seccionContactoFormulario form fieldset label {
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+  margin-right: 15px;
+  text-align: right;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.seccionTresInicio .seccionContactoFormulario form fieldset input {
+  text-align: center;
+  margin: 15px 0;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+.seccionTresInicio .seccionContactoFormulario form fieldset textarea {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+}
+.seccionTresInicio .seccionContactoFormulario form fieldset .boton-enviar {
+  width: 180px;
+  height: 40px;
+  margin-left: 50%;
+}
+.seccionTresInicio .seccionContactoMapa {
+  text-align: center;
+  margin-top: 32px;
+}
+.seccionTresInicio .seccionContactoMapa a {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+h2 {
+  grid-area: titulo;
+}
+
+.seccionContactoFormulario {
+  grid-area: formulario;
+}
+
+.seccionContactoMapa {
+  grid-area: mapa;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.consulta {
+  grid-area: consulta;
+}
+
+.ingreso-nombre {
+  grid-area: ingreso-nombre;
+}
+
+.ingreso-mail {
+  grid-area: ingreso-mail;
+}
+
+.ingreso-consulta {
+  grid-area: ingreso-consulta;
+}
+
+.boton-enviar {
+  grid-area: enviar;
+}
+
+/*# sourceMappingURL=style.css.map */
