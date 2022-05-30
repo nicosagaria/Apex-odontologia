@@ -1,52 +1,7 @@
 @charset "UTF-8";
 /* nesting o anidamiento */
-/* Colores de Fondo */
-/* Tamaño de fuentes */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-.encabezado {
-  background-color: rgb(253, 179, 136);
-  width: 100%;
-  height: 20vh;
-  text-align: center;
-}
-.encabezado .logo {
-  display: inline-block;
-}
-.encabezado .logo .encabezadoLogo {
-  width: 150px;
-  margin-top: 30px;
-  margin-right: 400px;
-}
-@media screen and (max-width: 576px) {
-  .encabezado .logo .encabezadoLogo {
-    margin-right: 50%;
-    font-size: 12px;
-    color: pink;
-    font-family: "montserrat";
-  }
-}
-.encabezado .logo nav {
-  display: inline-block;
-}
-.encabezado .logo nav ul li {
-  display: inline-block;
-  padding: 0.5vh 3vw;
-}
-.encabezado .logo nav ul li a {
-  color: black;
-  font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-}
-@media screen and (max-width: 576px) {
-  .encabezado .logo nav ul li a {
-    margin-right: 50%;
-    font-size: 12px;
-    color: pink;
-    font-family: "montserrat";
-  }
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -64,9 +19,45 @@ ul {
   list-style-type: none;
 }
 
-/*a {
+a {
   list-style-type: none;
-}//
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.encabezado {
+  background-color: rgb(253, 179, 136);
+  width: 100%;
+  height: 20vh;
+  text-align: center;
+}
+.encabezado .logo {
+  display: inline-block;
+}
+.encabezado .logo .encabezadoLogo {
+  width: 150px;
+  margin-top: 30px;
+  margin-right: 400px;
+}
+.encabezado nav {
+  display: inline-block;
+}
+.encabezado nav ul li {
+  display: inline-block;
+  padding: 0.5vh 3vw;
+}
+.encabezado nav ul li a {
+  color: black;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+@media screen and (max-width: 576px) {
+  .encabezado nav ul li a {
+    font-size: 12px;
+    color: red;
+    font-family: "montserrat";
+  }
+}
 
 /* Colores de Fondo */
 /* Tamaño de fuentes */
@@ -84,10 +75,10 @@ ul {
 }
 .portadaInicio main div {
   display: inline-block;
-}
-.portadaInicio main div img {
-  width: 1000px;
-  height: 100%;
+  /* img {
+       width: 1000px;
+       height: 100%;
+   }*/
 }
 .portadaInicio main div h1 {
   color: rgb(43, 197, 197);
@@ -107,6 +98,12 @@ ul {
   color: black;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
+}
+.portadaInicio main .fondoPortada {
+  background-image: url(./../assets/img/consultorio05.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Colores de Fondo */
@@ -290,6 +287,255 @@ h2 {
 
 .boton-enviar {
   grid-area: enviar;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.portadaNosotros {
+  background-image: url(./../assets/img/dentista-2.jpg);
+  height: 75vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portadaNosotros .tituloPortada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 70vw;
+  height: 60vh;
+  font-family: "Montserrat", sans-serif;
+}
+.portadaNosotros .tituloPortada h1 {
+  font-size: 100px;
+  margin: 20px 0;
+}
+.portadaNosotros .tituloPortada h2 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.portadaTratamientos {
+  background-image: url(./../assets/img/cirugia.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.portadaFaq {
+  background-image: url(./../assets/img/dentista-telefono6.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.portadaContacto {
+  background-image: url(./../assets/img/dentista-telefono2.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.seccionDosNosotros {
+  background-color: rgb(43, 197, 197);
+  text-align: center;
+  height: 95vh;
+}
+.seccionDosNosotros h1 {
+  padding: 20px 0 2px 0;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.seccionDosNosotros .presentacionOdontologa {
+  display: flex;
+}
+.seccionDosNosotros .presentacionOdontologa div {
+  display: inline;
+  margin-top: 30px;
+}
+.seccionDosNosotros .presentacionOdontologa div h2 {
+  background-color: rgb(250, 166, 117);
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: left;
+  padding-left: 6%;
+}
+.seccionDosNosotros .presentacionOdontologa div p {
+  display: flex;
+  width: 80%;
+  margin: 100px 10px 0px;
+  padding: 3vh 5vw;
+  color: black;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+.seccionDosNosotros .presentacionOdontologa div img {
+  width: 260px;
+  border: solid 5px rgb(214, 151, 114);
+  margin: 0 120px 10px 70px;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.galeriaNosotros h2 {
+  color: rgb(43, 197, 197);
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  padding: 3vh 3vw;
+  text-align: center;
+}
+.galeriaNosotros div {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px;
+}
+.galeriaNosotros div img {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.seccionDosTratamientos {
+  background-color: rgb(43, 197, 197);
+  text-align: center;
+  height: 98vh;
+}
+.seccionDosTratamientos h1 {
+  padding: 20px 0 2px 0;
+  color: white;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+.seccionDosTratamientos li h2 {
+  background-color: rgb(250, 166, 117);
+  color: white;
+  text-align: left;
+  padding: 0 100px 0 65%;
+  margin: 10px 40px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.seccionDosTratamientos li div {
+  display: flex;
+}
+.seccionDosTratamientos li div img {
+  width: 180px;
+  margin: 20px 50px;
+}
+.seccionDosTratamientos li div p {
+  width: 60%;
+  margin: 50px 200px 0;
+  color: black;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.seccionTresTratamientos {
+  background-color: white;
+  text-align: center;
+  height: 90vh;
+}
+.seccionTresTratamientos h1 {
+  padding: 20px 0 2px 0;
+  color: white;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+.seccionTresTratamientos li h2 {
+  background-color: rgb(250, 166, 117);
+  color: white;
+  text-align: left;
+  padding-left: 10%;
+  margin: 10px 40px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.seccionTresTratamientos li div {
+  display: flex;
+}
+.seccionTresTratamientos li div p {
+  width: 60%;
+  margin: 50px 200px 0;
+  color: black;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+.seccionTresTratamientos li div img {
+  width: 180px;
+  margin: 20px 50px;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.seccionDosContacto {
+  background-color: rgb(43, 197, 197);
+  text-align: center;
+  height: 90vh;
+}
+.seccionDosContacto h1 {
+  padding: 20px 0;
+  color: white;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+.seccionDosContacto div {
+  display: flex;
+}
+.seccionDosContacto .infoHorario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.seccionDosContacto .infoHorario p {
+  color: black;
+  font-size: 28px;
+  padding: 4vh 10vw;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+.seccionDosContacto .whatsapp {
+  background-color: rgb(250, 166, 117);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  height: 75vh;
+  margin-right: 80px;
+}
+.seccionDosContacto .whatsapp img {
+  width: 220px;
+  padding: 20px 30px;
+}
+.seccionDosContacto .whatsapp h2 {
+  background-color: rgb(41, 182, 182);
+  padding: 5px 10px;
+  color: white;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+}
+.seccionDosContacto .whatsapp p {
+  color: black;
+  font-size: 22px;
+  margin-top: 30px;
+  padding: 2vh 4vw;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
 }
 
 /*# sourceMappingURL=style.css.map */

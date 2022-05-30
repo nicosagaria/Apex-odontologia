@@ -1,0 +1,62 @@
+@import '../base/variables';
+
+.seccionDosNosotros {
+    background-color: $bg-color-seccion2;
+    text-align: center;
+    height: 95vh;
+
+        h1 {
+            padding: 20px 0 2px 0;
+            font-size: $font-size-titulo;
+            font-family: $font-family;
+            color: white;
+        }
+
+        .presentacionOdontologa {
+            display: flex;
+
+            div {
+
+                display: inline;
+                margin-top: 30px;
+
+            h2 {
+                background-color: rgb(250, 166, 117);
+                font-family: $font-family;
+                font-size: $font-size-sub-titulo;
+                color: white;
+                text-align: left;
+                padding-left: 6%;
+
+            }
+
+            p {
+                display: flex;
+                width: 80%;
+                margin: 100px 10px 0px;
+                padding: 3vh 5vw;
+                color: black;
+                font-size: 25px;
+                font-family: $font-family;
+                text-align: justify;
+
+            }
+            }
+            div {
+            img {
+                width: 260px;
+                border: solid 5px rgb(214, 151, 114);
+                margin: 0 120px 10px 70px;
+
+            }
+        } 
+
+        }
+
+
+
+
+
+
+    
+}

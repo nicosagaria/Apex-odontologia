@@ -1,5 +1,6 @@
 @import '../base/variables';
-@import '../breackpoints/breackpoints';
+@import '../base/mixin';
+
 
 .encabezado {
     background-color: $bg-color-encabezado;
@@ -15,10 +16,12 @@
         width: 150px;
         margin-top: 30px;
         margin-right: 400px;
-        @include small;
+        
     }    
+}
         nav {
         display: inline-block;
+       
 
             ul {
                 li {
@@ -39,4 +42,3 @@
 }
 
 
-}

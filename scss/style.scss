@@ -1,9 +1,14 @@
 /* nesting o anidamiento */ 
 
-@import '../scss/components/header';
 @import '../scss/base/estilosGenerales';
+@import '../scss/components/header';
 @import '../scss/components/portadaInicio';
 @import '../scss/components/footer';
 @import '../scss/components/seccionDosInicio';
 @import '../scss/components/seccionTresInicio';
-@import '../scss/breackpoints/breackpoints';
+@import '../scss/components/portadaPages';
+@import '../scss/components/seccionDosNosotros';
+@import '../scss/components/seccionTresNosotros';
+@import '../scss/components/seccionDosTratamientos';
+@import '../scss/components/seccionTresTratamientos';
+@import '../scss/components/seccionDosContacto';

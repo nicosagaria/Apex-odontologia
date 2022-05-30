@@ -17,10 +17,10 @@
             display: inline-block;
            // margin: 0 auto;
 
-            img {
+           /* img {
                 width: 1000px;
                 height: 100%;
-            }
+            }*/
 
             h1 {
             color: rgb(43, 197, 197);
@@ -45,6 +45,13 @@
             font-family: 'Montserrat', sans-serif;  
 
             }
+        }
+
+        .fondoPortada {
+            background-image: url(./../assets/img/consultorio05.jpg);
+            height: 70vh;
+            background-size: cover;
+            background-position: center;
         }
     }
 
