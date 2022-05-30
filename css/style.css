@@ -30,20 +30,28 @@ a {
   width: 100%;
   height: 20vh;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .encabezado .logo {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .encabezado .logo .encabezadoLogo {
-  width: 150px;
-  margin-top: 30px;
-  margin-right: 400px;
+  width: 200px;
+  margin-left: 40px;
 }
 .encabezado nav {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+}
+.encabezado nav ul {
+  display: flex;
+  flex-direction: row;
 }
 .encabezado nav ul li {
-  display: inline-block;
   padding: 0.5vh 3vw;
 }
 .encabezado nav ul li a {
@@ -312,6 +320,7 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 .portadaNosotros .tituloPortada h1 {
+  color: white;
   font-size: 100px;
   margin: 20px 0;
 }
@@ -322,23 +331,66 @@ h2 {
 
 .portadaTratamientos {
   background-image: url(./../assets/img/cirugia.jpg);
-  height: 70vh;
+  height: 75vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portadaTratamientos .tituloPortada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 70vw;
+  height: 60vh;
+  font-family: "Montserrat", sans-serif;
+}
+.portadaTratamientos .tituloPortada h1 {
+  color: white;
+  font-size: 100px;
+  margin: 20px 0;
+}
+.portadaTratamientos .tituloPortada h2 {
+  font-size: 20px;
+  margin: 20px 0;
 }
 
-.portadaFaq {
-  background-image: url(./../assets/img/dentista-telefono6.jpg);
-  height: 70vh;
-  background-size: cover;
-  background-position: center;
+.portadaFaq .portadaFaqDos {
+  height: 80vh;
 }
 
 .portadaContacto {
   background-image: url(./../assets/img/dentista-telefono2.jpg);
-  height: 70vh;
+  height: 75vh;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.portadaContacto .tituloPortada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 70vw;
+  height: 60vh;
+  font-family: "Montserrat", sans-serif;
+}
+.portadaContacto .tituloPortada h1 {
+  color: white;
+  font-size: 100px;
+  margin: 20px 0;
+}
+.portadaContacto .tituloPortada h2 {
+  font-size: 20px;
+  margin: 20px 0;
 }
 
 /* Colores de Fondo */
@@ -422,7 +474,7 @@ h2 {
   background-color: rgb(250, 166, 117);
   color: white;
   text-align: left;
-  padding: 0 100px 0 65%;
+  padding-left: 65%;
   margin: 10px 40px;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
@@ -449,6 +501,7 @@ h2 {
   background-color: white;
   text-align: center;
   height: 90vh;
+  margin-top: 30px;
 }
 .seccionTresTratamientos h1 {
   padding: 20px 0 2px 0;
@@ -486,13 +539,7 @@ h2 {
 .seccionDosContacto {
   background-color: rgb(43, 197, 197);
   text-align: center;
-  height: 90vh;
-}
-.seccionDosContacto h1 {
-  padding: 20px 0;
-  color: white;
-  font-size: 40px;
-  font-family: "Montserrat", sans-serif;
+  height: 85vh;
 }
 .seccionDosContacto div {
   display: flex;
@@ -501,6 +548,12 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.seccionDosContacto .infoHorario h2 {
+  padding: 20px 0;
+  color: white;
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
 }
 .seccionDosContacto .infoHorario p {
   color: black;
@@ -516,14 +569,14 @@ h2 {
   align-items: center;
   width: 70vw;
   height: 75vh;
-  margin-right: 80px;
+  margin: 50px 100px 30px 0;
 }
 .seccionDosContacto .whatsapp img {
   width: 220px;
   padding: 20px 30px;
 }
-.seccionDosContacto .whatsapp h2 {
-  background-color: rgb(41, 182, 182);
+.seccionDosContacto .whatsapp h3 {
+  background-color: #1f8f8f;
   padding: 5px 10px;
   color: white;
   font-size: 25px;

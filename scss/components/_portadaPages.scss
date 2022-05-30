@@ -24,6 +24,7 @@
         font-family: $font-family;
         
         h1 {
+        color: white;
         font-size: 100px;
         margin: 20px 0 ;
         }
@@ -37,21 +38,85 @@
 
 .portadaTratamientos {
     background-image: url(./../assets/img/cirugia.jpg);
-    height: 70vh;
+    height: 75vh;
     background-size: cover;
     background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    .tituloPortada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(grey, $alpha: 0.5);
+        width: 70vw;
+        height: 60vh;
+        font-family: $font-family;
+        
+        h1 {
+        color: white;
+        font-size: 100px;
+        margin: 20px 0 ;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 20px 0 ;
+        }
+
+    }
 }
+    
+
 
 .portadaFaq {
-    background-image: url(./../assets/img/dentista-telefono6.jpg);
-    height: 70vh;
-    background-size: cover;
-    background-position: center;
+    .portadaFaqDos {
+        height: 80vh;
+    }
+
+   
+    
 }
+
+
+
+
 
 .portadaContacto {
     background-image: url(./../assets/img/dentista-telefono2.jpg);
-    height: 70vh;
+    height: 75vh;
     background-size: cover;
     background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+    .tituloPortada {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(grey, $alpha: 0.5);
+        width: 70vw;
+        height: 60vh;
+        font-family: $font-family;
+        
+        h1 {
+        color: white;
+        font-size: 100px;
+        margin: 20px 0 ;
+        }
+        h2 {
+            font-size: 20px;
+            margin: 20px 0 ;
+        }
+
+    }
 }
