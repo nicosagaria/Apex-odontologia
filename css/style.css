@@ -28,7 +28,7 @@ a {
 .encabezado {
   background-color: rgb(253, 179, 136);
   width: 100%;
-  height: 20vh;
+  height: 15vh;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -40,7 +40,7 @@ a {
   justify-content: center;
 }
 .encabezado .logo .encabezadoLogo {
-  width: 200px;
+  width: 180px;
   margin-left: 40px;
 }
 .encabezado nav {
@@ -72,6 +72,7 @@ a {
 .portadaInicio {
   background-color: white;
   width: 100%;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,7 +110,7 @@ a {
 }
 .portadaInicio main .fondoPortada {
   background-image: url(./../assets/img/consultorio05.jpg);
-  height: 70vh;
+  height: 75vh;
   background-size: cover;
   background-position: center;
 }
@@ -589,6 +590,88 @@ h2 {
   padding: 2vh 4vw;
   font-family: "Montserrat", sans-serif;
   text-align: justify;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.seccionDosFaq {
+  background-color: rgb(43, 197, 197);
+  height: 80vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.seccionDosFaq ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 20px 20px;
+}
+.seccionDosFaq ul li h2 {
+  background-color: rgb(250, 166, 117);
+  color: white;
+  text-align: left;
+  padding-left: 50%;
+  margin: 10px 40px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.seccionDosFaq ul li div {
+  display: flex;
+}
+.seccionDosFaq ul li div img {
+  width: 180px;
+  margin: 20px 50px;
+}
+.seccionDosFaq ul li div p {
+  width: 60%;
+  margin: 50px 200px 0;
+  color: black;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+
+/* Colores de Fondo */
+/* Tamaño de fuentes */
+.seccionTresFaq {
+  background-color: white;
+  height: 80vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.seccionTresFaq ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: 20px 20px;
+}
+.seccionTresFaq ul li h2 {
+  background-color: rgb(250, 166, 117);
+  color: white;
+  text-align: left;
+  padding-left: 10%;
+  margin: 10px 40px;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+.seccionTresFaq ul li div {
+  display: flex;
+}
+.seccionTresFaq ul li div p {
+  width: 60%;
+  margin: 50px 200px 0;
+  color: black;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+}
+.seccionTresFaq ul li div img {
+  width: 180px;
+  margin: 20px 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

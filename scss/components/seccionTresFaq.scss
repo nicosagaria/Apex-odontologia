@@ -1,0 +1,66 @@
+@import '../base/variables';
+
+.seccionTresFaq {
+    background-color: white;
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+   ul {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 20px;
+    li {
+        //display: flex;
+        //margin: 20px auto;
+
+        h2 {
+            background-color:rgb(250, 166, 117);    
+            color: white;
+            text-align: left;
+            
+            padding-left: 10% ;
+            
+            margin: 10px 40px;
+            font-size: $font-size-sub-titulo;
+            font-family: $font-family;
+
+        }
+
+        div {
+            display: flex;
+            
+
+            p {
+            
+                width: 60%;
+                margin: 50px 200px 0 ;
+                color: black;
+                font-size: 25px;
+                font-family: $font-family;
+                text-align: justify;
+    
+                }
+
+            img {
+                width: 180px;
+                margin: 20px 50px;
+                
+            }
+
+    
+    }
+
+
+    }
+
+   }
+
+
+
+
+}
