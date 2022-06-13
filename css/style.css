@@ -685,6 +685,7 @@ h2 {
   color: white;
   font-size: 100px;
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 576px) {
   .portadaNosotros .tituloPortada h1 {
@@ -713,6 +714,7 @@ h2 {
 .portadaNosotros .tituloPortada h2 {
   font-size: 20px;
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 576px) {
   .portadaNosotros .tituloPortada h2 {
@@ -749,6 +751,7 @@ h2 {
   color: white;
   font-size: 100px;
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 576px) {
   .portadaTratamientos .tituloPortada h1 {
@@ -814,6 +817,7 @@ h2 {
   color: white;
   font-size: 100px;
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 576px) {
   .portadaFaq .tituloPortada h1 {
@@ -848,6 +852,7 @@ h2 {
 .portadaFaq .tituloPortada h2 {
   font-size: 20px;
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 576px) {
   .portadaFaq .tituloPortada h2 {
@@ -884,6 +889,7 @@ h2 {
   color: white;
   font-size: 100px;
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 576px) {
   .portadaContacto .tituloPortada h1 {
@@ -912,6 +918,7 @@ h2 {
 .portadaContacto .tituloPortada h2 {
   font-size: 20px;
   margin: 20px 0;
+  text-align: center;
 }
 @media (max-width: 576px) {
   .portadaContacto .tituloPortada h2 {
