@@ -2,12 +2,13 @@
 
 .seccionTresInicio {
     background-color: white;
-    /*height: 80vh;*/
+    
     width: 100%;
     color: black;
     font-size: large;
     font-family: 'Roboto', sans-serif;
-    //text-align: center;
+    margin-bottom: 30px;
+    
     display: grid;
     grid-template-areas: 
     
@@ -15,8 +16,66 @@
     "formulario mapa"
     ;
     
-    grid-template-columns: 50% auto;
-    grid-template-rows: 70px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    @include small {
+        display: grid;
+    grid-template-areas: 
+    
+    "titulo"
+    "formulario"
+    "mapa"
+    ;
+
+    grid-template-columns: 1fr;
+    
+    }
+
+    @include Medium {
+        display: grid;
+    grid-template-areas: 
+    
+    "titulo"
+    "formulario"
+    "mapa"
+    ;
+
+    grid-template-columns: 1fr;
+    
+    }
+
+
+
+    @include Large {
+        display: grid;
+    grid-template-areas: 
+    
+    "titulo"
+    "formulario"
+    "mapa"
+    ;
+
+    grid-template-columns: 1fr;
+    
+    }
+
+
+
+    @include ExtraLarge {
+        display: grid;
+    grid-template-areas: 
+    
+    "titulo"
+    "formulario"
+    "mapa"
+    ;
+
+    grid-template-columns: 1fr;
+    
+    }
+
+
 
 
     a {
@@ -36,7 +95,8 @@
     }
 
     .seccionContactoFormulario {
-       // width: 50%;         
+       // width: 50%;       
+       align-items: center;    
 
         form {
             padding: 2vh 2vw;
@@ -62,7 +122,33 @@
                 
                 border-color: white;
                 border: none;
+
+                @include small {
+                    margin: 0 70px 0 10px;
+                    justify-content: center;
+                 
+                 }
+
+
+                @include Medium {
+                    margin: 0 70px 0 20px;
+                    justify-content: center;
+                 
+                 }
+
+
+                @include Large {
+                    margin: 0 100px 0 20px;
+                    justify-content: center;
+                 
+                 }
+
+                @include ExtraLarge {
+                   margin: 0 100px 0 20px;
+                   justify-content: center;
                 
+                }
+
 
 
                 label {
@@ -75,7 +161,16 @@
                     color: black;
                     font-family: 'Montserrat', sans-serif;
                     font-size: 20px;
+
+                    @include small {
+                        font-size: 14px;
+                     
+                     }
                     
+                    @include Medium {
+                        font-size: 16px;
+                     
+                     }
                    
 
                 }
@@ -86,9 +181,18 @@
                     margin: 15px 0;
                     color: black;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 18px;    
+                    font-size: 18px;
+                    
+                    @include small {
+                        font-size: 12px;
+                     
+                     }
 
-
+                    @include Medium {
+                        font-size: 14px;
+                     
+                     }
+    
 
 
                     //padding: 0.5vh 2vw;
@@ -104,12 +208,37 @@
                     font-family: 'Montserrat', sans-serif;
                     font-size: 18px;
                     padding: 10px;
+
+                    @include small {
+                        font-size: 12px;
+                     
+                     }
+
+                    @include Medium {
+                        font-size: 14px;
+                     
+                     }
+
                 }
 
                 .boton-enviar {
                     width: 180px;
                     height: 40px;
                     margin-left: 50%;
+
+                    @include small {
+                        width: 140px;
+                        height: 30px;
+                        //margin-left: 40%;
+                     
+                     }
+
+                    @include Medium {
+                        width: 160px;
+                        height: 30px;
+                        //margin-left: 40%;
+                     
+                     }
                     
                     
                 }
@@ -128,12 +257,48 @@
        // width: 800px;
        // height: 00px;
        // overflow: hidden;
+
+       iframe {
+        width: 650px;
+
+        @include small {
+            width: 350px;
+           
+           
+        }
+
+        @include Medium {
+            width: 540px;
+        }
+
+        @include Large {
+            width: 740px;
+        }
+
+        @include ExtraLarge {
+            width: 900px;
+        }
+
+        @include ExtraExtraLarge {
+            width: 500px;
+        }
+
+       }
         
        a {
             color: black;
             font-family: 'Montserrat', sans-serif;
             font-size: 20px;
         
+            @include small {
+                font-size: 16px;
+             
+             }
+
+            @include Medium {
+                font-size: 18px;
+             
+             }
     
        }
     }

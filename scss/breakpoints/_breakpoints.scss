@@ -1,0 +1,41 @@
+
+// Pantalla pequeña
+
+
+@mixin small {
+    @media (max-width: 576px) {
+       @content;
+    }
+}
+
+
+
+@mixin Medium {
+    @media (min-width: 577px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+
+
+@mixin Large {
+    @media (min-width: 769px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+
+
+@mixin ExtraLarge {
+    @media (min-width: 993px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+
+
+@mixin ExtraExtraLarge {
+    @media (min-width: 1201px) and (max-width: 1400px) {
+        @content;
+    }
+}

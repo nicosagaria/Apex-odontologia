@@ -3,22 +3,75 @@
 .seccionDosNosotros {
     background-color: $bg-color-seccion2;
     text-align: center;
-    height: 95vh;
+    //height: 95vh;
+    height: 100%;
+    padding-bottom: 30px;
+
+    @include small {
+        
+        padding-bottom: 10px;
+    }
+
+    @include Medium {
+        
+        padding-bottom: 20px;
+    }
+
+    @include Large {
+        
+        padding-bottom: 20px;        
+    }
+
 
         h1 {
             padding: 20px 0 2px 0;
             font-size: $font-size-titulo;
             font-family: $font-family;
             color: white;
+            
+            @include small {
+                font-size: 20px;
+                padding: 10px 0 2px 0;
+            }
+
+            @include Medium {
+                font-size: 30px;
+                padding: 10px 0 2px 0;
+            }
+
+            @include Large {
+                font-size: 35px;
+                
+            }
+
+
         }
 
         .presentacionOdontologa {
             display: flex;
+            
+            @include small {
+                display: flex;
+                flex-direction: column;
+            }
+
+            @include Medium {
+                display: flex;
+                flex-direction: column;
+            }
 
             div {
 
                 display: inline;
                 margin-top: 30px;
+
+                @include small {
+                    margin-top: 10px;
+                }
+
+                @include Medium {
+                    margin-top: 20px;
+                }
 
             h2 {
                 background-color: rgb(250, 166, 117);
@@ -27,6 +80,21 @@
                 color: white;
                 text-align: left;
                 padding-left: 6%;
+
+                @include small {
+                    font-size: 15px;
+                    padding-left: 10px;
+                }
+
+                @include Medium {
+                    font-size: 20px;
+                    padding-left: 20px;
+                }
+
+                @include Large {
+                    font-size: 24px;
+                    padding-left: 24px;
+                }
 
             }
 
@@ -40,6 +108,24 @@
                 font-family: $font-family;
                 text-align: justify;
 
+                @include small {
+                    font-size: 12px;
+                    width: auto;
+                    margin: 20px 5px;
+                }
+
+                @include Medium {
+                    font-size: 18px;
+                    width: auto;
+                    margin: 20px 5px;
+                }
+
+                @include Large {
+                    font-size: 20px;
+                    margin: 50px 10px 0;
+                }
+
+
             }
             }
             div {
@@ -47,6 +133,21 @@
                 width: 260px;
                 border: solid 5px rgb(214, 151, 114);
                 margin: 0 120px 10px 70px;
+
+                @include small {
+                    width: 150px;
+                    margin: 10px auto;
+                }
+
+                @include Medium {
+                    width: 180px;
+                    margin: 10px auto;
+                }
+
+                @include Large {
+                    width: 200px;
+                    margin: 0 80px 10px 50px;
+                }
 
             }
         } 

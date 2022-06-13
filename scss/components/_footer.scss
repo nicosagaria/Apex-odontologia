@@ -5,10 +5,17 @@ footer {
     width: 100%;
     height: map-get($footer, height-footer );
     font-family: map-get($footer,font-family-footer );
+    padding-bottom: 20px;
+
+    
 
     ul {
     padding-top: map-get($footer, padding-top-footer); 
     margin-left: map-get($footer, marging-left-footer); 
+
+    @include small {
+        margin-left: 5%;
+    }
 
         li {
         padding: map-get($footer, padding-lista-footer) ;
@@ -18,12 +25,22 @@ footer {
             color: map-get($footer, color-text); 
             display: map-get($footer, display-footer); 
             align-items: center;   
+            font-size: 20px;
             //font-family: map-get($footer, font-family-footer);
+
+            @include small {
+                font-size: 12px;
+            }
 
             }
             
             img {
             width: map-get($footer, width-img); 
+
+            @include small {
+                width: 8px;
+
+            }
 
             }
         
@@ -32,10 +49,21 @@ footer {
 
     .copyright {
     padding-left: map-get($copyright, padding-left-copy) ;
+    padding-top: 10px;
     color: map-get($copyright, color-copy ) ;
     font-size: map-get($copyright, font-size-copy);
     font-style: map-get($copyright, font-style-copy); 
     font-family: map-get($copyright, font-family-copy); 
+    
+    
+    @include small {
+        font-size: 8px;
+        padding-left: 35%;
+        margin-top: 20px;
+        
+    }
+
+
     }
 
 
