@@ -41,6 +41,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 10px;
 }
 @media (max-width: 576px) {
   .encabezado {
@@ -62,6 +63,11 @@ a {
 .encabezado .logo .encabezadoLogo {
   width: 180px;
   margin: 10px;
+  border-radius: 50%;
+}
+.encabezado .logo .encabezadoLogo:hover {
+  transition-property: all 1s;
+  background-color: rgb(238, 163, 119);
 }
 @media (max-width: 576px) {
   .encabezado .logo .encabezadoLogo {
@@ -90,11 +96,19 @@ a {
 .encabezado nav ul li {
   padding: 3vh 3.5vw;
   justify-content: center;
+  border-radius: 6px;
+}
+.encabezado nav ul li:hover {
+  transition-property: all 1s;
+  background-color: rgb(238, 163, 119);
 }
 .encabezado nav ul li a {
   color: black;
   font-size: 20px;
   font-family: "Montserrat", sans-serif;
+}
+.encabezado nav ul li a:hover {
+  color: white;
 }
 @media (max-width: 576px) {
   .encabezado nav ul li a {
@@ -112,14 +126,6 @@ a {
   }
 }
 
-/*  @media (max-width: 450px) {
-      .encabezado {
-          background-color: red;
-
-
-
-      }
-  } */
 /* Colores de Fondo */
 /* Tamaño de fuentes */
 .portadaInicio {
